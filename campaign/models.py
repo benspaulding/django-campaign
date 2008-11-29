@@ -5,6 +5,7 @@ import datetime
 from django.db import models
 from django.db.models import permalink
 from django.contrib.auth.models import User
+from django.contrib.localflavor.us.models import PhoneNumberField
 from tagging.models import Tag
 from template_utils import markup
 from template_utils.markup import formatter
@@ -52,7 +53,7 @@ class Supporter(models.Model):
     country = models.CharField(max_length=100, default=u'USA')
     zip_code = models.CharField(u'ZIP / Postal code', max_length=32, default='83440')
     email = models.EmailField(unique=True)
-    phone = models.PhoneNumberField(blank=True)
+    phone = PhoneNumberField(blank=True)
     
     # Supporting actions
     message = models.TextField(blank=True)
