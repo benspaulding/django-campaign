@@ -1,11 +1,17 @@
-=================================================
-Campaign app for Django applications
-=================================================
+======================================
+ Campaign app for Django applications
+======================================
 
-This application manages a Web designers portfolio. 
-For use with Django_. For installation instructions, 
-see the file ``INSTALL.txt`` in this directory, and 
-for documentation see the files in the ``docs/`` 
-directory.
+This application allows lightweight management of small-time political
+campaigns. For example, I used this to help a friend run for city council in a
+small town. (He won!)
 
-.. _Django: http://www.djangoproject.com/
+This code is fairly old, and I am not certain what version of Django it
+requires. I am simply putting it here for storage.
+
+Features
+========
+
+* Simple blog entries
+* Gather and track support information
+* Publish statements on particular issues
